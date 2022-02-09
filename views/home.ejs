@@ -1,0 +1,21 @@
+<%- include("partials/header") -%>
+
+    <h1>Home</h1>
+
+    <p> <%= homeStartingContent %></p>
+
+    <% posts.forEach((post) => { %>
+        <h1><%= post.postTitle %></h1>
+        
+        <% var truncatedPostBody = post.postBody;  %>
+        <% if(post.postBody.length > 100) { %>
+            <% truncatedPostBody = post.postBody.substring(0,100) + "..." %>
+            <p><%= truncatedPostBody %> <a href="/posts/<%= post.postTitle %>">Read More</a></p> 
+        <% } else { %>
+            <p><%= truncatedPostBody %></p>
+        <% } %>
+
+        
+    <% }); %>
+
+<%- include("partials/footer") -%>
