@@ -12,14 +12,22 @@ This Project allows users to compose new blogs with a title and body, adding it 
 To get a local copy up and running follow these example steps :
 
 ## Prerequisites
+
     npm
+    
         npm install npm@latest -g
         
 ## Installation
     1. Clone the Repo
+    
     2. Install NPM packages
+    
         npm install
+        
     3. Run Server
+    
+        brew services restart mongodb-community@<version>
+        mongo (in another terminal window)
         nodemon app.js
 
 Go to localhost:3000 to run the app.
