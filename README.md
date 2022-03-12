@@ -2,32 +2,26 @@
 
 This Project allows users to compose new blogs with a title and body, adding it to the DB. All the blogs in the DB are then displayed on the Home Page.
 
-## Built With
-    Node.js
-    Express
-    MongoDB
-    EJS
+## Built With :
+  - Node.js
+  - Express
+  - MongoDB
+  - EJS
     
 ## Getting Started
 To get a local copy up and running follow these example steps :
 
-## Prerequisites
-
-    npm
-    
-        npm install npm@latest -g
+## Pre Requisites
+  - npm
+      - npm install npm@latest -g
         
 ## Installation
-    1. Clone the Repo
-    
-    2. Install NPM packages
-    
-        npm install
-        
-    3. Run Server
-    
-        brew services restart mongodb-community@<version>
-        mongo (in another terminal window)
-        nodemon app.js
+  - Clone the Repo
+  - Install NPM packages
+    - npm install
+  - Run Server
+    - brew services restart mongodb-community@<version>
+    - mongo (in another terminal window)
+    - nodemon app.js
 
 Go to localhost:3000 to run the app.
